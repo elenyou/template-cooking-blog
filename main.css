@@ -1,9 +1,14 @@
 html, body {
-  font-family: 'Rubik', sans-serif;
   height: 100%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  width: auto;
   color: #333;
   font-size: 1.2em;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -15,132 +20,131 @@ html, body {
 
 /* menu */
 .menuOne{
-    width: 30px;
-    height: 30px;
-    position: relative;
-    transition: .1s;
-    margin: 3%;
-    cursor: pointer;
-    display: inline-block;
-    z-index: 100;
-  }
-  .menuOne span{
-    width: 5px;
-    height: 5px;
-    background-color: rgb(250, 14, 14);
-    display: block;
-    border-radius: 50%;
-  }
-  .menuOne:hover span{
-    transform: scale(1.3);
-    transition: 350ms cubic-bezier(.8, .5, .2, 1.4);
-    box-shadow: 0px 2px 3px rgba(0,0,0,.4); 
-  }
-  .menuOne span:nth-child(1){
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  .menuOne span:nth-child(2){
-    position: absolute;
-    left: 12px;
-    top: 0;
-  
-  }
-  .menuOne span:nth-child(3){
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .menuOne span:nth-child(4){
-    position: absolute;
-    left: 0;
-    top: 12px;
-  }
-  .menuOne span:nth-child(5){
-    position: absolute;
-    left: 12px;
-    top: 12px;
-  }
-  .menuOne span:nth-child(6){
-    position: absolute;
-    right: 0px;
-    top: 12px;
-  }
-  .menuOne span:nth-child(7){
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-  }
-  .menuOne span:nth-child(8){
-    position: absolute;
-    left: 12px;
-    bottom: 0px;
-  }
-  .menuOne span:nth-child(9){
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-  }
-  .clickMenuOne{
-    transform: rotate(180deg);
-    cursor: pointer;
-    transition: .2s cubic-bezier(.8, .5, .2, 1.4);
-  
-  }
-  .clickMenuOne span{
-    border-radius: 50%;
-    transition-delay: 200ms;
-    background-color:rgba(255, 189, 189, 0.767);
-    transition: .5s cubic-bezier(.8, .5, .2, 1.4);
-  
-  }
-  .clickMenuOne span:nth-child(2) {
-    position: absolute;
-    left: 6px;
-    top: 6px;
-  }
-  .clickMenuOne span:nth-child(4) {
-    position: absolute;
-    left: 6px;
-    top: 18px;
-  }
-  .clickMenuOne span:nth-child(6) {
-    position: absolute;
-    right: 6px;
-    top: 6px;
-  }
-  .clickMenuOne span:nth-child(8) {
-    position: absolute;
-    left: 18px;
-    bottom: 6px;
-  }
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: .1s;
+  margin: 3%;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 100;
+}
+.menuOne span{
+  width: 5px;
+  height: 5px;
+  background-color: rgb(250, 14, 14);
+  display: block;
+  border-radius: 50%;
+}
+.menuOne:hover span{
+  transform: scale(1.3);
+  transition: 350ms cubic-bezier(.8, .5, .2, 1.4);
+  box-shadow: 0px 2px 3px rgba(0,0,0,.4); 
+}
+.menuOne span:nth-child(1){
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.menuOne span:nth-child(2){
+  position: absolute;
+  left: 12px;
+  top: 0;
 
+}
+.menuOne span:nth-child(3){
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.menuOne span:nth-child(4){
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+.menuOne span:nth-child(5){
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+.menuOne span:nth-child(6){
+  position: absolute;
+  right: 0px;
+  top: 12px;
+}
+.menuOne span:nth-child(7){
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.menuOne span:nth-child(8){
+  position: absolute;
+  left: 12px;
+  bottom: 0px;
+}
+.menuOne span:nth-child(9){
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.clickMenuOne{
+  transform: rotate(180deg);
+  cursor: pointer;
+  transition: .2s cubic-bezier(.8, .5, .2, 1.4);
 
-  .sidenav {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    opacity: 0.7;
-    transition: 0.5s;
-    padding-top: 10%;
+}
+.clickMenuOne span{
+  border-radius: 50%;
+  transition-delay: 200ms;
+  background-color:rgba(255, 189, 189, 0.767);
+  transition: .5s cubic-bezier(.8, .5, .2, 1.4);
+
+}
+.clickMenuOne span:nth-child(2) {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+}
+.clickMenuOne span:nth-child(4) {
+  position: absolute;
+  left: 6px;
+  top: 18px;
+}
+.clickMenuOne span:nth-child(6) {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+.clickMenuOne span:nth-child(8) {
+  position: absolute;
+  left: 18px;
+  bottom: 6px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.7;
+  transition: 0.5s;
+  padding-top: 10%;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: red;
-    display: block;
-    transition: 0.3s;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: red;
+  display: block;
+  transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 /* nav over */
@@ -177,9 +181,6 @@ html, body {
   padding: 0 5%;
 }
 
-.soc .instagram img{
-  width: 65%;
-}
 .soc a {
   color: red;
 }
@@ -205,7 +206,6 @@ html, body {
   color: #964747;
   cursor: pointer;
 }
-
 
 /* BLOG */
 .blog {
@@ -352,5 +352,100 @@ html, body {
   margin: 0;
 }
 
+/* RESPONSIVE */
+
+@media (max-width: 1440px) {
+  .wrapper {
+    height: 600px;
+  }
+  .main-text {
+    color: red;
+    margin-right: 0%;
+    padding-top: 0%;
+  }
+  .footer {
+    height: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .post-image img {
+    width: 450px
+   }
+   .footer {
+    height: 50px;
+  }
+}
 
 
+@media (max-width: 992px) {
+  .main-text {
+    text-align: center;
+  }
+  .about {
+  margin: 5% 3%;
+  }
+  .post-image img {
+    width: 350px
+   }
+  .post p {
+    font-size: 1em;
+  }
+  .contact {
+    height: 400px;
+  }
+   .footer {
+    height: 40px;
+    font-size: 1em;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .about {
+    margin: 3% 1%;
+    flex-direction: column;
+  }
+  .about-text p{
+    font-size: 1em;
+  }
+  .blog {
+    height: 200px;
+  }
+  .chapter {
+    flex-direction: column;
+    height: auto;
+  }
+  .post-image img {
+    width: 250px
+   }
+  .post p {
+    font-size: 0.8em;
+  }
+  .contact {
+    height: 300px;
+  }
+  .contact h1 {
+    font-size: 1.5em;
+  }
+  .footer {
+    height: 30px;
+    font-size: 0.8em;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .post p {
+    font-size: 0.6em;
+  }
+  .post-text {
+    padding: 0% 2%;
+  }
+  .post-image img {
+    width: 200px;
+   }
+   .more {
+    font-size: 1em;
+  }
+}
