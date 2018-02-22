@@ -1,0 +1,356 @@
+html, body {
+  font-family: 'Rubik', sans-serif;
+  height: 100%;
+  color: #333;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: url('img/bg.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+
+/* menu */
+.menuOne{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    transition: .1s;
+    margin: 3%;
+    cursor: pointer;
+    display: inline-block;
+    z-index: 100;
+  }
+  .menuOne span{
+    width: 5px;
+    height: 5px;
+    background-color: rgb(250, 14, 14);
+    display: block;
+    border-radius: 50%;
+  }
+  .menuOne:hover span{
+    transform: scale(1.3);
+    transition: 350ms cubic-bezier(.8, .5, .2, 1.4);
+    box-shadow: 0px 2px 3px rgba(0,0,0,.4); 
+  }
+  .menuOne span:nth-child(1){
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .menuOne span:nth-child(2){
+    position: absolute;
+    left: 12px;
+    top: 0;
+  
+  }
+  .menuOne span:nth-child(3){
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menuOne span:nth-child(4){
+    position: absolute;
+    left: 0;
+    top: 12px;
+  }
+  .menuOne span:nth-child(5){
+    position: absolute;
+    left: 12px;
+    top: 12px;
+  }
+  .menuOne span:nth-child(6){
+    position: absolute;
+    right: 0px;
+    top: 12px;
+  }
+  .menuOne span:nth-child(7){
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+  }
+  .menuOne span:nth-child(8){
+    position: absolute;
+    left: 12px;
+    bottom: 0px;
+  }
+  .menuOne span:nth-child(9){
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+  .clickMenuOne{
+    transform: rotate(180deg);
+    cursor: pointer;
+    transition: .2s cubic-bezier(.8, .5, .2, 1.4);
+  
+  }
+  .clickMenuOne span{
+    border-radius: 50%;
+    transition-delay: 200ms;
+    background-color:rgba(255, 189, 189, 0.767);
+    transition: .5s cubic-bezier(.8, .5, .2, 1.4);
+  
+  }
+  .clickMenuOne span:nth-child(2) {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+  }
+  .clickMenuOne span:nth-child(4) {
+    position: absolute;
+    left: 6px;
+    top: 18px;
+  }
+  .clickMenuOne span:nth-child(6) {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+  }
+  .clickMenuOne span:nth-child(8) {
+    position: absolute;
+    left: 18px;
+    bottom: 6px;
+  }
+
+
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.7;
+    transition: 0.5s;
+    padding-top: 10%;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: red;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #fff;
+}
+
+/* nav over */
+
+.main-text {
+  text-align: right;
+  margin-right: 7%;
+  padding-top: 5%;
+  color: #fff;
+  font-weight: 400;
+}
+
+/* ABOUT */
+
+.about {
+  display: flex;
+  justify-content: center;
+  margin: 5% 10%;
+  align-items: center;
+}
+
+.about > div {
+  padding: 0 5%;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+
+.soc {
+  padding: 0 5%;
+}
+
+.soc .instagram img{
+  width: 65%;
+}
+.soc a {
+  color: red;
+}
+
+.soc a:hover {
+  color: #964747;
+  cursor: pointer;
+}
+
+.more {
+  text-align: center;
+  margin: 7% 0;
+  font-size: 1.3em;
+}
+
+.more a{
+  color: red;
+  text-decoration: none;
+  
+}
+
+.more a:hover{
+  color: #964747;
+  cursor: pointer;
+}
+
+
+/* BLOG */
+.blog {
+  width: 100%;
+  height: 400px;
+  background: url('img/bg_sm_1.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+.blog h1 {
+  text-align: center;
+  padding: 10% 0;
+  text-transform: uppercase;
+  color: red;
+  font-weight: 400;
+}
+
+.chapter {
+  display: flex;
+  justify-content: center;
+  height: 700px;
+  margin: 3% 5%;
+}
+
+.chapter .item-one {
+  width: 100%;
+  padding: 2%;
+}
+
+.chapter .item-main-text h2 {
+  color: #fff;
+  background-color: rgba(255, 0, 0, 0.8);
+  padding: 2%;
+  text-align: center;
+  font-weight: 400;
+}
+
+.chapter .item-two {
+  width: 100%;
+  padding: 2%;
+} 
+
+.item-one {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+
+.item-post {
+  display: flex;
+}
+
+.item-post > div {
+  padding: 2% 0;
+}
+
+.item-post-text p,
+.item-post-text a{
+  padding: 0 3%;
+}
+
+.item-post-text a{
+  color: red;
+}
+
+.item-post-text a:hover{
+  color: #964747;
+  cursor: pointer;
+}
+
+.item-two {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+
+.comment-text {
+  padding: 2% 0;
+}
+
+.comment-text h4,
+.comment-text p {
+  margin: 0% 0% 3% 0%; 
+} 
+
+.comment-text a {
+  color: red;
+}
+
+.comment-text a:hover {
+  color: #964747;
+  cursor: pointer;
+}
+
+/* BLOG-POST */
+.blog-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-text {
+  padding: 0% 5%;
+}
+
+.post p {
+  border-top: 2px red solid;
+  padding-top: 5%;
+}
+
+/* contact */
+.contact {
+  height: 500px;
+  width: 100%;
+  background: url('img/contact.jpg') no-repeat center fixed;
+  background-size: cover;
+  text-align: center;
+  color: red;
+  font-weight: 400;
+}
+
+.contact-text {
+  padding: 10% 0;
+}
+.contact li {
+  list-style-type: none;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: red;
+}
+
+.footer p {
+  color: #fff;
+  text-align: end;
+  padding: 1%;
+  margin: 0;
+}
+
+
+
