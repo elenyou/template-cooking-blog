@@ -157,6 +157,7 @@ body {
   font-weight: 400;
 }
 
+
 /* ABOUT */
 
 .about {
@@ -186,7 +187,7 @@ body {
 }
 
 .soc a:hover {
-  color: #964747;
+  opacity: 0.6;
   cursor: pointer;
 }
 
@@ -354,8 +355,62 @@ body {
   margin: 0;
 }
 
-/* RESPONSIVE */
+/* ANIMATION */
+/*Main page animation*/
 
+.logo {
+  opacity: 0;
+  animation: 1s 0.5s a-down ease-in-out forwards;
+  }
+
+  @keyframes a-down {
+    0% {
+      opacity: 0;
+      transform: translate3d(0,-300px, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+.main-text-one {
+  opacity: 0;
+  animation: 1s 0.5s a-right ease-in-out forwards;
+}
+
+.main-text-two {
+  opacity: 0;
+  animation: 1.2s 0.5s a-right ease-in-out forwards;
+}
+
+.main-text-three {
+  opacity: 0;
+  animation: 1.4s 0.5s a-right ease-in-out forwards;
+}
+
+@keyframes a-right {
+  0% {
+    opacity: 0;
+    transform: translate3d(100px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  transition: all 1s ease;
+}
+.animate.start {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* RESPONSIVE */
 @media (max-width: 1440px) {
   .wrapper {
     height: 600px;
@@ -368,6 +423,7 @@ body {
   .footer {
     height: 60px;
   }
+
 }
 
 @media (max-width: 1200px) {
