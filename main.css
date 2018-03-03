@@ -91,7 +91,6 @@ body {
   transform: rotate(180deg);
   cursor: pointer;
   transition: .2s cubic-bezier(.8, .5, .2, 1.4);
-
 }
 .clickMenuOne span{
   border-radius: 50%;
