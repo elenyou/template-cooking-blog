@@ -32,7 +32,7 @@ body {
 .menuOne span{
   width: 5px;
   height: 5px;
-  background-color: rgb(250, 14, 14);
+  background-color: linear-gradient(#7E57C2 50%, #3F51B5);
   display: block;
   border-radius: 50%;
 }
