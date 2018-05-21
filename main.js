@@ -1,9 +1,9 @@
 // navbar
 
-const menuOne = document.querySelector('.menuOne');
+const menuOne = document.querySelector('.menu');
 const mySidenav = document.getElementById("mySidenav");
 menuOne.addEventListener('click', function () {
-    this.classList.toggle("clickMenuOne");
+    this.classList.toggle("clickmenu");
 
     if (mySidenav.style.marginLeft == "-250px") {
         mySidenav.style.marginLeft = "0";
@@ -36,4 +36,4 @@ $(document).ready(function() {
     });
     
 });
-    
+

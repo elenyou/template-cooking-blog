@@ -1,0 +1,12 @@
+////////////*FOOTER*////////////
+
+.footer {
+    height: 4rem;
+    background-color: $color-secondary;
+
+    &__text {
+        color: $color-white;
+        text-align: end;
+        padding: 1rem;
+    }
+  }
