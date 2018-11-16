@@ -10,8 +10,7 @@ menuOne.addEventListener('click', function () {
     } else {
        mySidenav.style.marginLeft = "-250px";
     }
-}
-);
+});
 
 // Animation
 $(document).ready(function() {

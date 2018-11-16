@@ -4,7 +4,7 @@ $color-darkgrey: #333;
 $color-black: #111;
 $color-white: #fff;
 
-$gradient-primary: linear-gradient(111.24892639023471deg, rgba(37, 63, 79,1) 5.533854166666667%,rgba(181, 103, 127, .8) 53.38541666666667%,rgba(204, 198, 186, .8) 96.67968749999999%);
+$gradient-primary: linear-gradient(111.24892639023471deg, rgba(37,63,79,0.8) 5.533854166666667%,rgba(181,103,127,0.5) 53.38541666666667%,rgba(204,198,186,0.3) 96.67968749999999%);
 
 $bp-largest: 1280px;
 $bp-large: 980px;
@@ -38,7 +38,7 @@ html {
     @media only screen and (max-width: $bp-small) {
         font-size: 30%;
     }
-    
+
     @media only screen and (max-width: $bp-smallest) {
         font-size: 20%;
     }
@@ -75,8 +75,6 @@ body {
     background-image: $gradient-primary, url('img/bg.jpg');
     background-size: cover;
     background-position: top;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     @media only screen and (max-width: $bp-medium) {
         height: 80vh;
@@ -85,7 +83,7 @@ body {
     @media only screen and (max-width: $bp-small) {
         height: 60vh;
     }
-    
+
     @media only screen and (max-width: $bp-smallest) {
         height: 50vh;
     }
@@ -94,8 +92,8 @@ body {
 .main-text {
     text-align: center;
     color: $color-white;
-    margin-top: 5rem;
-    
+
+
     &__logo {
         padding: 2rem;
         opacity: 0;
@@ -104,7 +102,7 @@ body {
         @media only screen and (max-width: $bp-small) {
             width: 50%;
         }
-        
+
         @media only screen and (max-width: $bp-smallest) {
             width: 40%;
         }
@@ -116,17 +114,20 @@ body {
         opacity: 0;
         font-size: 6rem;
         font-weight: 300;
+        background-color: $color-primary;
+        width: 35rem;
+        margin: 0.5rem auto;
     }
 
     &--1 {
         animation: 1s 0.5s a-right ease-in-out forwards;
         text-transform: uppercase;
     }
-    
+
     &--2 {
         animation: 1.2s 0.5s a-right ease-in-out forwards;
     }
-    
+
     &--3 {
         animation: 1.4s 0.5s a-right ease-in-out forwards;
     }
@@ -165,11 +166,11 @@ body {
 
     @media only screen and (max-width: $bp-large) {
         padding: 4rem 5rem;
-    }  
+    }
 
     @media only screen and (max-width: $bp-smallest) {
         padding: 1rem;
-    } 
+    }
 
     &__image {
 
@@ -178,7 +179,7 @@ body {
 
             @media only screen and (max-width: $bp-medium) {
                 width: 25rem;
-            } 
+            }
         }
     }
 
@@ -228,7 +229,7 @@ body {
         color: $color-primary;
     }
 }
-  
+
 
 ///////*SECTION CONTACT*//////////
 .contact {
@@ -253,6 +254,5 @@ body {
         list-style-type: none;
     }
 }
-  
-  
-  
+
+
